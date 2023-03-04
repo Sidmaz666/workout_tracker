@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Workout Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/fontawesome.js"></script>
+    <script src="./js/tailwindcss.js"></script>
+    <script src="./js/main.js"></script>
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
+
+  </head>
+  <body class="relative">
+    <div
+      class="flex p-2 justify-center text-white bg-black/90 items-center text-xl font-semibold w-full relative"
+    >
+      <button
+        class="p-2 hover:text-blue-400 text-gray-400 rounded-md absolute top-0 left-0"
+        onclick="workoutEntryModel()"
+      >
+        <i class="fa-solid fa-plus"></i>
+      </button>
+      <span class="text-red-300">
+        <i class="fa-solid fa-dumbbell"></i>
+        Workout Tracker
+      </span>
+    </div>
+
+    <div class="p-2 flex-col justify-start md:justify-center items-center">
+
+      <div id="workout-list">
+      </div>
+
+      </div>
+
+  </body>
+</html>
