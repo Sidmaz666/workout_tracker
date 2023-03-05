@@ -270,7 +270,7 @@ function workoutEntryModel() {
     "beforeend",
     `
     <div
-      class="absolute w-screen h-screen bg-black/80 flex justify-center items-start pt-5 md:pt-0 md:items-center top-0 left-0"
+      class="absolute w-screen h-screen bg-black/80 flex justify-center pt-5 md:pt-0 items-center top-0 left-0"
       id="workout-entry-form"
     >
       <div class="p-2 bg-white rounded-md relative w-[300px]">
@@ -281,7 +281,7 @@ function workoutEntryModel() {
           <i class="fa-solid fa-circle-xmark"></i>
         </button>
 
-        <form id="workoutForm" class="flex flex-col space-y-3">
+	<form id="workoutForm" class="flex flex-col space-y-3 h-[400px] md:h-auto overflow-y-auto pb-2 md:pb-0 ">
           <span class="text-xl font-semibold text-gray-800"> Select Day </span>
 
           <select name="workout_day" class="p-2 text-lg font-semibold text-gray-700 rounded-md bg-gray-300">
@@ -371,7 +371,7 @@ function workoutEntryModel() {
             Workout Time
           </span>
 
-          <input type="time" name="workout_time" required  class="p-1 text-md font-semibold text-gray-700 rounded-md bg-gray-300 w-full"/>
+	  <input type="time" name="workout_time" required  class="p-4 md:p-1 text-md font-semibold text-gray-700 rounded-md bg-gray-300 w-full"/>
 
           <span class="text-xl font-semibold text-gray-800">
             Workout Duration(in min)
