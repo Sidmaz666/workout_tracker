@@ -371,7 +371,7 @@ function workoutEntryModel() {
             Workout Time
           </span>
 
-          <input type="time" name="workout_time" required  class="p-1 text-md font-semibold text-gray-700 rounded-md bg-gray-300"/>
+          <input type="time" name="workout_time" required  class="p-1 text-md font-semibold text-gray-700 rounded-md bg-gray-300 w-full"/>
 
           <span class="text-xl font-semibold text-gray-800">
             Workout Duration(in min)
