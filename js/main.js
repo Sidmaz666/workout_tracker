@@ -136,10 +136,14 @@ function renderWorkout() {
     for (let i = 1; i <= 7; i++) {
       workoutList.forEach((data) => {
 	if(data.groupKey == i)
+	  if(data.groupKey !== current_day_groupKey)
 	  serealized_workoutList.push(data)
       })
     }
 
+    console.log(serealized_workoutList)
+
+    if(serealized_workoutList.length > 0){
     document.querySelector('#workout-list')
       .insertAdjacentHTML("beforeend",`
       		<div id="workout-list-rest">
@@ -164,7 +168,6 @@ function renderWorkout() {
 
     // All Workouts in Serial
     serealized_workoutList.forEach((data) => {
-      if(data.groupKey !== current_day_groupKey)
 	document.querySelector('#workout-list-rest > table')
       	.insertAdjacentHTML("beforeend",
 	  `
@@ -231,6 +234,7 @@ function renderWorkout() {
 	  `  
 	)
     })
+ }
 
   } else {
     document.querySelector("#workout-list").insertAdjacentHTML(
