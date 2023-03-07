@@ -141,7 +141,6 @@ function renderWorkout() {
       })
     }
 
-    console.log(serealized_workoutList)
 
     if(serealized_workoutList.length > 0){
     document.querySelector('#workout-list')
